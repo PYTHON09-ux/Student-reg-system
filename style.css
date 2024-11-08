@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(191, 220, 246);
+    background: no-repeat url(./img/background.jpg);
+    background-size: cover;
+    font-family: concert one;
+}
+
+.header {
+    font-family: "Maven Pro", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem  0 0;
+
+}
+
+
+.header h1{
+    margin: 1.5rem;
+}
+
+.header p{
+    max-width: 64rem;
+    margin-bottom: 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+/* -------------------------------form styling ----------------------------------- */
+.container {
+    display: flex;
+    padding: 0 4rem;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.registration-form {
+    backdrop-filter: blur(10px);
+    color: white;
+    padding:1rem;
+    flex-basis: 40%;
+}
+
+.registration-form h1{
+    text-align: center;
+    color: rgb(255, 31, 31);
+    font-family: "Maven Pro", sans-serif;
+    font-size:x-large;
+    margin-bottom: 2rem;
+}
+
+
+.registration-form form label {
+    font-size: 1.4rem;
+}
+
+.registration-form form input {
+    margin: 1rem 0;
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+    width: 17rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(255, 253, 251);
+    color: white;
+}
+
+.registration-form form input:focus{
+    border: 1px solid rgb(118, 19, 12);
+}
+
+.registration-form form input::placeholder {
+    padding: 0rem;
+    color: rgb(67, 134, 193);
+    opacity: 0.3;
+}
+
+.registration-form form button {
+    margin-left: 1.4rem;
+    padding: 0.5rem;
+    font-size: larger;
+    background-color: rgb(17, 92, 13);
+    color: rgb(255, 255, 255);
+    width: 13rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: none;
+}
+
+/* ----------------------------register student styling ---------------------------------- */
+
+.register-students {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    backdrop-filter: blur(30px);
+    overflow-y: auto;
+}
+
+.register-students-header {
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(255, 255, 155);
+    
+}
+
+.register-students .row-header {
+    text-align: center;
+    height: 2rem;
+    width: 9rem;
+    margin: 1rem 0.8rem 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.register-student-list {
+    display: flex;
+    border-bottom: 1px solid rgb(253, 253, 253);   
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 1rem 0 0;
+
+}
+
+
+.register-student-list .row-data {
+    text-align: end;
+    color: white;
+}
+
+
+
+
+.actions{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 1rem;
+}
+.delete-btn{
+    font-weight: 500;
+    background-color: red;
+    border-radius: 2rem;
+    color: white;
+    padding:0.2rem;
+    margin: 0  0 0.5rem;
+    border: none;
+}
+
+.edit-btn{
+    background-color: rgb(36, 86, 18);
+    border-radius: 2rem;
+    color: white;
+    padding: 0.2rem;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.row-data{
+    max-width: 8rem;    
+    flex-grow: 1;
+    text-wrap:wrap;
+    overflow-wrap: break-word;
+}
+
+.email-column{
+    flex-grow: 2;
+    max-width: 12rem;   
+}
+
+
+/* ---------------------- scrollbar styling --------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #fd0202; 
+    border-radius: 10px; 
+    border: 3px solid #f1f1f1; 
+}
+
+/* Hover Effect for Scrollbar Thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; 
+}
+
+/* Active State (when clicking on the scrollbar) */
+::-webkit-scrollbar-thumb:active {
+    background-color: #004080; 
+}
+
+

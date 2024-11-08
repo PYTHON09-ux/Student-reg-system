@@ -87,6 +87,8 @@ It provides a user-friendly interface to add, edit, delete, and display student 
 🖼️ Screenshots -
 
 ![image](https://github.com/user-attachments/assets/32064df1-ac68-41fd-abed-a255511314f6)
+![image](https://github.com/user-attachments/assets/46df3c37-5c60-45f6-ae6f-6bdf516af852)
+
 
 
 📂 Project Structure

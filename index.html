@@ -5,74 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Meta Description (for SEO) -->
-     <meta name="description" content="Student registration form to capture student details including name, ID, class, and roll number. Easily manage student records with edit and delete options.">
-    
-     <!-- Keywords (for SEO) -->
-     <meta name="keywords" content="student registration, student form, student details, edit student, delete student, manage student records, web form">
-     
-     <!-- Author of the Page -->
-     <meta name="author" content="Pavan Patane">
+    <!-- Meta Description (for SEO) -->
+    <meta name="description"
+        content="Student registration form to capture student details including name, ID, class, and roll number. Easily manage student records with edit and delete options.">
+
+    <!-- Keywords (for SEO) -->
+    <meta name="keywords"
+        content="student registration, student form, student details, edit student, delete student, manage student records, web form">
+
+    <!-- Author of the Page -->
+    <meta name="author" content="Pavan Patane">
 
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <div class="header">
-        <h1>Smart Student Registration System 🎓 </h1>
-        <p>🚀 Effortlessly register, edit, and manage student details with our interactive form ✏️. Perfect for schools
-            and colleges 🏫 to streamline student data 📊. Keep records organized and accessible with just a few clicks!
-            📋✨</p>
-    </div>
+    <main>
 
-    <div class="container">
-        <div class="registration-form">
-            <h1>register Here !!</h1>
-            <form id="studentForm">
-                <label for="sname">Student Name</label> <br>
-                <input type="text" id="sname" placeholder="Enter your name" required> <br>
-
-                <label for="sid">Student ID</label> <br>
-                <input type="text" id="sid" min="1" max="100" pattern="^[1-9][0-9]$"
-                    title="Please enter a valid 5-digit number without leading zeros" placeholder="Enter your ID"
-                    required> <br>
-
-                <label for="sclass">Class</label> <br>
-                <input type="text" id="sclass" placeholder="Enter your class" required> <br>
-
-                <label for="contact">Contact Number</label><br>
-                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number"
-                    pattern="^[6-9]\d{9}$" title="Please enter a valid 10-digit phone number starting with 6-9"
-                    required>
-                <br>
-
-                <label for="email">Email</label> <br>
-                <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                    title="Please enter a valid email address (e.g., user@example.com)"
-                    placeholder="Enter your email id" required> <br>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-        <div class="register-students">
-            <div class="register-students-header">
-                <div class="row-header">Name</div>
-                <div class="row-header">Student ID</div>
-                <div class="row-header">Class</div>
-                <div class="row-header">Contact No.</div>
-                <div class="row-header email-column">Email</div>
-                <div class="row-header">Actions</div>
+        <section>
+            <div class="header">
+                <h1>Smart Student Registration System 🎓 </h1>
+                <p>🚀 Effortlessly register, edit, and manage student details with our interactive form ✏️. Perfect for
+                    schools
+                    and colleges 🏫 to streamline student data 📊. Keep records organized and accessible with just a few
+                    clicks!
+                    📋✨</p>
             </div>
-            <div id="studentList" class="student-list"></div>
-        </div>
-    </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="registration-form">
+                    <h1>register Here !!</h1>
+                    <form id="studentForm">
+                        <label for="sname">Student Name</label> <br>
+                        <input type="text" id="sname" placeholder="Enter your name" required> <br>
+
+                        <label for="sid">Student ID</label> <br>
+                        <input type="text" id="sid" min="1" max="100" pattern="^[1-9][0-9]$"
+                            title="Please enter a valid 5-digit number without leading zeros"
+                            placeholder="Enter your ID" required> <br>
+
+                        <label for="sclass">Class</label> <br>
+                        <input type="text" id="sclass" placeholder="Enter your class" required> <br>
+
+                        <label for="contact">Contact Number</label><br>
+                        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number"
+                            pattern="^[6-9]\d{9}$" title="Please enter a valid 10-digit phone number starting with 6-9"
+                            required>
+                        <br>
+
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            title="Please enter a valid email address (e.g., user@example.com)"
+                            placeholder="Enter your email id" required> <br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="register-students">
+                    <div class="register-students-header">
+                        <div class="row-header">Name</div>
+                        <div class="row-header">Student ID</div>
+                        <div class="row-header">Class</div>
+                        <div class="row-header">Contact No.</div>
+                        <div class="row-header email-column">Email</div>
+                        <div class="row-header">Actions</div>
+                    </div>
+                    <div id="studentList" class="student-list"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
 
     <script src="app.js"></script>
 </body>

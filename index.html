@@ -47,30 +47,30 @@
                     <form id="studentForm">
                         <label for="sname">Student Name</label> <br>
                         <input type="text" id="sname" placeholder="Enter your name" required> <br>
-
+    
                         <label for="sid">Student ID</label> <br>
-                        <input type="text" id="sid" min="1" max="100" pattern="^[1-9][0-9]$"
-                            title="Please enter a valid 5-digit number without leading zeros"
-                            placeholder="Enter your ID" required> <br>
-
+                        <input type="text" id="sid" min="1" max="100" pattern="^[1-9][0-9][0]$"
+                            title="Please enter a valid 3-digit number without leading zeros" placeholder="Enter your ID (1-100)"
+                            required> <br>
+    
                         <label for="sclass">Class</label> <br>
                         <input type="text" id="sclass" placeholder="Enter your class" required> <br>
-
+    
                         <label for="contact">Contact Number</label><br>
                         <input type="tel" id="contact" name="contact" placeholder="Enter your contact number"
                             pattern="^[6-9]\d{9}$" title="Please enter a valid 10-digit phone number starting with 6-9"
                             required>
                         <br>
-
+    
                         <label for="email">Email</label> <br>
                         <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                             title="Please enter a valid email address (e.g., user@example.com)"
                             placeholder="Enter your email id" required> <br>
-
+    
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-
+    
                 <div class="register-students">
                     <div class="register-students-header">
                         <div class="row-header">Name</div>
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </section>
-
+       
 
     </main>
 

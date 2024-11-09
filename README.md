@@ -48,7 +48,7 @@ It provides a user-friendly interface to add, edit, delete, and display student 
 --- 1. Clone the Repository:
 
 
---- git clone https://github.com/PYTHON09-ux/smart-student-registration.git
+--- git clone https://github.com/PYTHON09-ux/Student-reg-system.git
 
 --- 2. Navigate to Project Folder:
 

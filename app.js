@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function deleteStudent(index) {
-        const students = JSON.parse(localStorage.getItem('students')) || [];
+        const students = JSON.parse(localStorage.getItem('students')) || [];    
         students.splice(index, 1); // Remove student at given index
         localStorage.setItem('students', JSON.stringify(students));
     }
